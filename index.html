@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roll Dice</title>
+</head>
+<body>
+
+    <input type="button" value='Roll Dice' onclick="myFunction()"> <br> <br>
+    <img src="d1.png" alt="Dice" width="42" height="42" id='dice1'>
+    <img src="d1.png" alt="Dice" width="42" height="42" id='dice2'>
+    <p id="result"> NOT DUCE !</p>
+
+    <script>
+    
+    function myFunction(){
+
+    var dc = 'd1.png';
+    var num1 = Math.floor(Math.random() * 6) + 1;
+    var num2 = Math.floor(Math.random() * 6) + 1;
+
+
+    
+
+        /* DICE 1 */
+
+
+        if ( num1 == 1){
+            document.getElementById('dice1').src = 'd1.png';
+            
+        }
+
+        else if ( num1 == 2){
+            document.getElementById('dice1').src = 'd2.png';
+            
+        }
+
+        else if ( num1 == 3){
+            document.getElementById('dice1').src = 'd3.png';
+            
+        }
+
+        else if ( num1 == 4){
+            document.getElementById('dice1').src = 'd4.png';
+            
+        }
+
+        else if ( num1 == 5){
+            document.getElementById('dice1').src = 'd5.png';
+           
+        }
+
+        else {
+            document.getElementById('dice1').src = 'd6.png';
+            
+        }
+
+
+
+        /* DICE 2 */
+
+
+        if ( num2 == 1){
+            document.getElementById('dice2').src = 'd1.png';
+            
+        }
+
+        else if ( num2 == 2){
+            document.getElementById('dice2').src = 'd2.png';
+            
+        }
+
+        else if ( num2 == 3){
+            document.getElementById('dice2').src = 'd3.png';
+            
+        }
+
+        else if ( num2 == 4){
+            document.getElementById('dice2').src = 'd4.png';
+            
+        }
+
+        else if ( num2 == 5){
+            document.getElementById('dice2').src = 'd5.png';
+           
+        }
+
+        else {
+            document.getElementById('dice2').src = 'd6.png';
+            
+        }
+
+
+
+        if ( num1 == num2){
+
+            document.getElementById('result').innerHTML = '<b> DUCE ! </b> ';
+
+        }
+
+        else{
+            document.getElementById('result').innerHTML = ' NOT DUCE ! ';
+
+        }
+
+
+
+
+
+
+
+    }
+    
+
+
+
+
+    </script>
+    
+</body>
+</html>
+
+
